@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="firstapplication.codesroom.com.firstprojectfromcodesroom.fregments.ListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="firstapplication.codesroom.com.firstprojectfromcodesroom.fregments.ListFragment">
+
+
+    <TextView
+        android:id="@+id/loadingTextView"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Loading.." />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:name="firstapplication.codesroom.com.firstprojectfromcodesroom.fregments.ListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="firstapplication.codesroom.com.firstprojectfromcodesroom.fregments.ListFragment"
+        tools:listitem="@layout/fragment_item" />
+
+
+</RelativeLayout>
